@@ -1,0 +1,1873 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
+    font-family: 'Jost', sans-serif;
+}
+a, a:active, a:focus {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+*::-webkit-scrollbar {
+    width: 8px;
+}
+*::-webkit-scrollbar-thumb {
+    background: #89938F;
+    border-radius: 20px;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(270deg, #30107A 0.05%, #A739C0 99.96%);
+    box-shadow: 0px 4px 6px #24232396;
+    z-index: 5;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.nav-link{
+    color: #89938F;
+}
+.navbar{
+    min-height: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+}
+.logo img{
+    width: 220px;
+    height: 90px;
+}
+.logo2{
+    display: none;
+}
+.nav-cat{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    right: 40px;
+}
+.nav-item{
+    background: #ffff;
+    border-radius: 20px;
+    width: 120px;
+    height: 28px;
+    flex-shrink: 0;
+    text-align: center;
+}
+.nav-link{
+    transition: 0.5s ease;
+    color: #89938F;
+    text-align: center;
+    font-size: 13px;
+    line-height: normal;
+}
+.nav-link:hover{
+    color: black;
+    font-size: 15px;
+}
+.searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+    position: relative;
+    right: 50px;
+}
+.search{
+    width: 942px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #ffff;
+}
+.search hr{
+    width: 1px;
+    height: 51px;
+    border: none;
+    background: #8E918F80;
+    position: absolute;
+    right: 14.5%;
+}
+.search-box{
+    border: none;
+    outline: none;
+    background: none;
+    width: 830px;
+    height: 51px;
+    font-size: 20px;
+    position: relative;
+    top: 0px;
+    left: 16px;
+}
+.searchbtn img{
+    width: 18px;
+    height: 18px;
+}
+.searchbtn{
+    position: relative;
+    right: 51px;
+    top: 1.5px;
+}
+.searchbnt-a{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    bottom: -2px;
+    right: -8px;
+    border-radius: 100%;
+    transition: 0.5s;
+}
+.searchbnt-a:hover{
+    background-color: #c5c5c583;
+}
+.microfone{
+    width: 51px;
+    height: 51px;
+    border-radius: 100px;
+    background: #ffff;
+    position: relative;
+    right: 5px;
+    transition: 0.5s;
+}
+.microfone:hover{
+    background-color: #c5c5c5;
+}
+.microfone img{
+    position: relative;
+    top: 13px;
+    left: 13px;
+}
+.menu{
+    width: 51px;
+    cursor: pointer;
+}
+.menu-perfil{
+    display: flex;
+    width: 51px;
+    height: 51px;
+    background: #ffff;
+    border-radius: 100px;
+    position: fixed;
+    top: 30px;
+    right: 14px;
+    border: 2px solid #89938F;
+    pointer-events: all;
+}
+.menu-perfil img{
+    width: 24px;
+    height: 24px;
+    position: relative;
+    left: 12px;
+    top: 11px;
+    transition: opacity 0.2s
+}
+.menuhover{
+    opacity: 0;
+    display: flex;
+    width: 124px;
+    height: 34px;
+    background: #ffff;
+    border-radius: 100px;
+    border: 2px solid #89938F;
+    position: relative;
+    left: 12px;
+    bottom: 27px;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+.menuhover.visible{
+    opacity: 1;
+    pointer-events: auto;
+}  
+.menuhover a {
+    position: relative;
+    top: 3px;
+    left: 10px;
+    padding-left: 5px;
+}
+.sacola{
+    transition: 0.2s;
+}
+.sacola:hover{
+    margin: 2px;
+}
+.caixa{
+    transition: 0.2s;
+}
+.caixa:hover{
+    margin: 2px;
+}
+.nav-list a{
+    position: relative;
+    font-size: 18px;
+    color: #89938F;
+    top: 28px;
+}
+.nav-list{
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background: #ffff;
+    box-shadow: -5px 5px 10px 0px rgba(0,0,0,0.5);
+    clip-path: circle(25px at 90% -15%);
+    transition: 0.8s ease-out;
+
+    justify-content: space-around;
+    text-align: center;
+}
+.navbar.active .nav-list{
+    clip-path: circle(1000px at 90% -15%);
+}
+.nav-list a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background: linear-gradient(270deg, #30107A 0.05%, #A739C0 99.96%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease;
+}
+.nav-list a:hover::after{
+    width: 100%;
+}
+.nav-list a:hover{
+    font-size: 20px;
+    color: black;
+    transition: 0.5s ease;
+}
+@media screen and (max-width: 1700px) {
+    .nav-cat{
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        position: relative;
+        right: -50px;
+    }
+    .nav-item{
+        background: #ffff;
+        border-radius: 20px;
+        width: 90px;
+        height: 28px;
+        flex-shrink: 0;
+        text-align: center;
+    }
+    .nav-link{
+        transition: 0.5s ease;
+        color: #89938F;
+        text-align: center;
+        font-size: 10px;
+        line-height: normal;
+    }
+    .nav-link:hover{
+        color: black;
+        font-size: 12px;
+    }
+    .searchbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 25px;
+        position: relative;
+        right: -20px;
+    }
+    .search{
+        width: 742px;
+        height: 51px;
+        flex-shrink: 0;
+        border-radius: 100px;
+        background: #ffff;
+    }
+    .search hr{
+        width: 1px;
+        height: 51px;
+        border: none;
+        background: #8E918F80;
+        position: absolute;
+        right: 17.5%;
+    }
+    .search-box{
+        border: none;
+        outline: none;
+        background: none;
+        width: 630px;
+        height: 51px;
+        font-size: 20px;
+        position: relative;
+        top: 0px;
+        left: 16px;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .nav-cat{
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        position: relative;
+        right: -58px;
+    }
+    .nav-item{
+        background: #ffff;
+        border-radius: 20px;
+        width: 70px;
+        height: 28px;
+        flex-shrink: 0;
+        text-align: center;
+    }
+    .nav-link{
+        transition: 0.5s ease;
+        color: #89938F;
+        text-align: center;
+        font-size: 8px;
+        line-height: normal;
+    }
+    .nav-link:hover{
+        color: black;
+        font-size: 9px;
+    }
+    .searchbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 25px;
+        position: relative;
+        right: -60px;
+    }
+    .search{
+        width: 442px;
+        height: 51px;
+        flex-shrink: 0;
+        border-radius: 100px;
+        background: #ffff;
+    }
+    .search hr{
+        width: 1px;
+        height: 51px;
+        border: none;
+        background: #8E918F80;
+        position: absolute;
+        right: 26%;
+    }
+    .search-box{
+        border: none;
+        outline: none;
+        background: none;
+        width: 350px;
+        height: 51px;
+        font-size: 20px;
+        position: relative;
+        top: 0px;
+        left: 16px;
+    }
+    .searchbtn img{
+        width: 18px;
+        height: 18px;
+    }
+    .searchbtn{
+        position: relative;
+        right: 41px;
+        top: 1.5px;
+    }
+    .logo img{
+        width: 180px;
+        height: 90px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    header {
+        height: 70px;
+    }
+    .nav-cat{
+        display: none;
+    }
+    .searchbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 25px;
+        position: relative;
+        top: 25px;
+        right: -2px;
+    }
+    .search{
+        position: fixed;
+        width: 100vw;
+        height: 51px;
+        flex-shrink: 0;
+        border-radius: 0;
+        background: #ffff;
+        box-shadow: 0px 4px 6px #24232396;
+    }
+    .search hr{
+        display: none;
+    }
+    .search-box{
+        border: none;
+        outline: none;
+        background: none;
+        width: 80vw;
+        height: 51px;
+        font-size: 20px;
+        position: relative;
+        top: 0px;
+        left: 10px;
+    }
+    .searchbtn img{
+        width: 18px;
+        height: 18px;
+    }
+    .searchbtn{
+        position: relative;
+        left: 37vw;
+        top: 1.5px;
+    }
+    .microfone{
+        width: 0;
+        height: 0;
+        border-radius: 0;
+        background: none;
+        position: relative;
+        left: 39vw;
+        top: -24px;
+    }
+    .microfone img{
+        position: relative;
+        top: 13px;
+    }
+    .searchbnt-b{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+        bottom: -41px;
+        right: -43px;
+        transition: 0.5s;
+    }
+    .searchbnt-b:hover{
+        background-color: #c5c5c583;
+    }
+    .logo img{
+        width: 120px;
+        height: 50px;
+        position: relative; 
+    }
+    .logo{
+        position: relative;
+        top: -49px;
+    }
+    .menu-perfil{
+        top: 8px;
+    }
+    .menuhover{
+        opacity: 1;
+        display: block;
+        top: -49px;
+        pointer-events: all;
+    } 
+    .nav-list{
+        top: 70px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .search-box{
+        width: 70vw;
+    }
+    .searchbtn{
+        left: 30vw;
+    }
+    .microfone{
+        left: 35vw;
+    }
+}
+@media screen and (max-width: 360px) {
+    .search-box{
+        width: 55vw;
+    }
+    .searchbtn{
+        left: 22vw;
+    }
+    .microfone{
+        left: 28vw;
+    }
+}
+@media screen and (max-width: 340px) {
+    .searchbar{
+        width: 100vw;
+        right: 153px;
+        right: 41vw;
+    }
+    .search-box{
+        width: 55vw;
+    }
+    .searchbtn{
+        left: 22vw;
+    }
+    .microfone{
+        left: 28vw;
+    }
+    .logo1{
+        display: none;
+    }
+    .logo2{
+        display: block;
+    }
+    .logo{
+        right: 60px;
+        width: 100px;
+    }
+}
+@media screen and (max-width: 290px) {
+    .searchbar{
+        width: 100vw;
+        right: 140px;
+    }
+    .search-box{
+        width: 50vw;
+    }
+    .searchbtn{
+        left: 16vw;
+    }
+    .microfone{
+        left: 21vw;
+    }
+}
+
+
+
+
+
+
+
+
+.btnt1{
+    width: 51px;
+    height: 51px;
+    background: #30107A;
+    border-radius: 100%;
+ }
+ .btnt1 img{
+    transform: scale(0.65);
+ }
+ .btnt2{
+    width: 51px;
+    height: 51px;
+    background: #30107A;
+    border-radius: 100%;
+ }
+ .btnt2 img{
+    transform: scale(0.65);
+ }
+
+
+
+
+.container-slider{
+    display: flex;
+    width: 300px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 23vh;
+    right: 1400px;
+   
+}
+
+.container-images{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+   
+}
+
+.slider{
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+}
+.on{
+    opacity: 1;
+}
+
+#prev-button, #next-button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#prev-button img, #next-button img{
+    width: 100%;
+    height: 100%
+}
+
+#next-button{
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container-slider2{
+    display: flex;
+    width: 700px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+  
+    margin-top: 20px;
+    position: absolute;
+    top: 500px;
+    right: 1200px;
+  transition: 0.5;
+    
+}
+
+.container-images2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    transition: 0.5;
+}
+
+.slider2{
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.5;
+
+}
+.on2{
+    opacity: 1;
+}
+
+#prev-button2, #next-button2{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#prev-button2 img, #next-button2 img{
+    width: 100%;
+    height: 100%
+}
+
+#next-button2{
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+.botão-color1{
+    position: absolute;
+    padding: 30px 30px;
+    width: 50px;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 40px;
+    top: 890px;
+    left: 200px;
+    user-select: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+    }
+    .botão-color2{
+        position: absolute;
+        padding: 30px 30px;
+        width: 50px;
+        background-color: rgb(151, 151, 151);
+        border: 1px solid black;
+        border-radius: 40px;
+        top: 890px;
+        left: 270px;
+        user-select: none;
+        cursor: pointer;
+        transition: transform 0.2s;
+        }
+        .botão-color3{
+            position: absolute;
+            padding: 30px 30px;
+            width: 50px;
+            background-color: gold;
+            border: 1px solid black;
+            border-radius: 40px;
+            top: 890px;
+            left: 340px;
+            user-select: none;
+            cursor: pointer;
+            transition: transform 0.2s;
+            }
+            .botão-color4{
+                position: absolute;
+                padding: 30px 30px;
+                width: 50px;
+                background-color: white;
+                border: 1px solid black;
+                border-radius: 40px;
+                top: 890px;
+                left: 410px;
+                user-select: none;
+                cursor: pointer;
+                transition: transform 0.2s;
+                }
+                .botão-color5{
+                    position: absolute;
+                    padding: 30px 30px;
+                    width: 50px;
+                    background-color: rgb(0, 0, 0);
+                    border: 1px solid black;
+                    border-radius: 40px;
+                    top: 890px;
+                    left: 480px;
+                    user-select: none;
+                    cursor: pointer;
+                    transition: transform 0.2s;
+                    }
+
+
+
+
+
+                    .botão-color1:hover{
+                        transform: scale(1.2);
+                        }
+                        .botão-color2:hover{
+                        transform: scale(1.2);
+                        }
+                        .botão-color3:hover{
+                        transform: scale(1.2);
+                        }
+                        .botão-color4:hover{
+                        transform: scale(1.2);
+                        }
+                        .botão-color5:hover{
+                        transform: scale(1.2);
+                        }
+                        
+                        
+
+
+
+
+                        #form-pesquisa {
+                          position: absolute;
+                          width: 320px;
+                          top: 800px;
+                          left: 210px;
+                          display: flex;
+                          background-color: white;
+                          border: 1px solid #ccc;
+                          border-radius: 100px;
+                          padding: 5px;
+                        }
+                        
+                        #campo-pesquisa {
+                          flex: 1;
+                          border: none;
+                          padding: 10px;
+                          font-size: 16px;
+                          border-radius: 100px;
+                        }
+                        
+                        button {
+                          background: transparent;
+                          border: none;
+                          cursor: pointer;
+                        }#campo-pesquisa:focus {
+                            outline: none;
+                        }
+    
+  
+
+
+
+
+
+ #id-do-elemento-caixa  {
+    width: 900px; /* Define a largura do campo de texto em pixels */
+    height: 500px; /* Define a altura do campo de texto em pixels */
+    position: absolute; /* Define a posição absoluta para o campo de texto */
+    top: 300px; /* Define a distância a partir do topo em pixels */
+    right: 160px; 
+    border-radius: 2dvh;
+    border: none;
+    
+    box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25), 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px -4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.caixa:focus {
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 200px; /* Define a largura do botão de envio em pixels */
+    height: 50px; /* Define a altura do botão de envio em pixels */
+    position: absolute; /* Define a posição absoluta para o botão de envio */
+    top: 860px; /* Define a distância a partir do topo em pixels */  
+    cursor: pointer;
+    border: none;
+                            
+}
+                        
+.caixa::placeholder{
+    text-align: left; /* Alinhe o texto à esquerda */
+    position: absolute; /* Defina a posição para absoluta */
+    top: 0; /* Mova para o topo */
+    left: 10px;
+    size: 1000px;
+}
+.enviar{
+    position: absolute;
+    background-color: #30107A;
+    border-radius: 30px;
+    left: 1200px;
+    color: white;
+                          
+}
+
+
+
+
+
+
+@media  screen and (max-width: 1669px) {
+    .container-slider {      
+        position: absolute; /* Remover a posição absoluta */
+        top: 300px; /* Adicionar margem no topo, se necessário */
+        right: 1200px; /* Remover o deslocamento para a direita */
+        z-index: 4;
+    }
+
+    #next-button {
+        position: absolute; /* Remover a posição absoluta */
+        right: -50px;
+        top: -10px;
+    }
+   #prev-button{
+       position: absolute;
+        right: 300px;
+        top: -10px;
+    }
+  .container-slider2 {
+    width: 700px;
+        position: absolute; /* Remover a posição absoluta */
+        top: 600px; /* Adicionar margem no topo, se necessário */
+        right: 970px; /* Remover o deslocamento para a direita */
+    }
+ #next-button2 {
+
+        position: relative; /* Remover a posição absoluta */
+       right: 60px;
+      
+        top: -1px;
+    
+    }
+    #prev-button2{
+        position: absolute;
+        right: 530px;
+        top: 17px; 
+    }
+    .container-images2{
+        width: 400px;
+    }
+  
+ #id-do-elemento-caixa{
+        width: 900px; /* Define a largura do campo de texto em pixels */
+        height: 550px; /* Define a altura do campo de texto em pixels */
+        position: absolute; /* Define a posição absoluta para o campo de texto */
+        top: 370px; /* Define a distância a partir do topo em pixels */
+        right: 100px; 
+    
+        
+    }
+    input[type="submit"] {
+        width: 180px; /* Define a largura do botão de envio em pixels */
+        height: 50px; /* Define a altura do botão de envio em pixels */
+    }
+    
+    .enviar{
+       position: absolute;      
+        left: 1000px; /* Define a distância da esquerda em pixels */
+        margin-top: 100px; /* Define a distância a partir do topo em pixels */
+      
+    }
+    .botão-color1{
+        position: absolute;      
+        top: 1000px;
+        left: 160px;
+        }
+        .botão-color2{
+            position: absolute;      
+            top: 1000px;
+            left: 230px;
+            }    
+            .botão-color3{
+                position: absolute;      
+                top: 1000px;
+                left: 300px;
+                }        
+                .botão-color4{
+                    position: absolute;      
+                    top: 1000px;
+                    left: 370px;
+                    }  
+                    .botão-color5{
+                        position: absolute;      
+                        top: 1000px;
+                        left: 440px;
+                        }
+                        
+#form-pesquisa {
+    position: absolute;
+    top: 900px;
+    left: 170px;
+
+}
+
+
+}
+@media screen and (max-width: 1600px) {
+    .botão-color1{
+        position: absolute;      
+        
+        left: 80px;
+        }
+        .botão-color2{
+            position: absolute;      
+           
+            left: 150px;
+            }    
+            .botão-color3{
+                position: absolute;      
+               
+                left: 220px;
+                }        
+                .botão-color4{
+                    position: absolute;      
+                  
+                    left: 290px;
+                    }  
+                    .botão-color5{
+                        position: absolute;      
+                       
+                        left: 360px;
+                        }
+                        
+#form-pesquisa {
+    position: absolute;
+    left: 90px;
+
+}
+.enviar{
+    position: absolute;
+    left: 960px; /* Define a distância da esquerda em pixels */
+    
+}    
+}
+
+
+
+
+
+
+@media screen and (max-width:1500px){
+    .container-slider {
+     position: absolute;
+     right: 1120px;
+
+
+    } .container-slider2 {
+        position: absolute;
+        right: 880px;
+   
+   
+       }
+
+
+       #id-do-elemento-caixa    {
+        width: 800px; /* Define a largura do campo de texto em pixels */
+        height: 550px; /* Define a altura do campo de texto em pixels */
+        position: absolute; /* Define a posição absoluta para o campo de texto */
+        top: 370px; /* Define a distância a partir do topo em pixels */
+        right: 100px; }
+        
+        .enviar{
+            position: absolute;
+            left: 900px; /* Define a distância da esquerda em pixels */
+            
+        }    
+}
+
+
+@media screen and (max-width:1500px){
+    .container-slider {
+        position: absolute;
+        right: 1020px;
+   
+   
+       } .container-slider2 {
+           position: absolute;
+           right: 780px;
+      
+      
+          }
+
+}
+
+
+
+
+@media screen and (max-width:1280px){
+
+
+
+    #id-do-elemento-caixa  {
+        width: 500px; /* Define a largura do campo de texto em pixels */
+        height: 350px; /* Define a altura do campo de texto em pixels */
+        position: absolute; /* Define a posição absoluta para o campo de texto */
+        top: 320px; /* Define a distância a partir do topo em pixels */
+        right: 100px; }
+        .container-slider {
+            position: absolute;
+            right: 850px;
+            top: 210px;
+       
+           } .container-slider2 {
+               position: absolute;
+               right: 630px;
+               top: 500px;
+          
+              }
+#prev-button2{
+top: -3px;
+
+}
+#prev-button{
+    top: 40px;
+}    
+
+#next-button{
+    top: 35px;
+}
+
+#next-button2{
+    top: -20px;
+}
+                                      
+#form-pesquisa {
+    position: absolute;
+    left: 110px;
+    top: 770px;
+}
+input[type="submit"] {
+    width: 100px; /* Define a largura do botão de envio em pixels */
+    height: 40px; /* Define a altura do botão de envio em pixels */
+    top: 700px;
+    position: absolute;
+
+}
+.enviar{
+    position: absolute;
+    left: 880px; /* Define a distância da esquerda em pixels */
+
+}    
+
+.botão-color1{
+    position: absolute;      
+    top: 850px;
+    left: 90px;
+    }
+    .botão-color2{
+        position: absolute;      
+        top: 850px;
+        left: 160px;
+        }    
+        .botão-color3{
+            position: absolute;      
+            top: 850px;
+            left: 230px;
+            }        
+            .botão-color4{
+                position: absolute;      
+                top: 850px;
+                left: 300px;
+                }  
+                .botão-color5{
+                    position: absolute;      
+                    top: 850px;
+                    left: 370px;
+                    }
+
+}
+
+
+@media screen and  (max-width:1200px){ 
+
+    .container-slider {
+        position: absolute;
+        right: 790px;
+    
+   
+       } .container-slider2 {
+           position: absolute;
+           right: 560px;
+           
+      
+          }
+          .enviar{
+            position: absolute;
+            left: 800px; /* Define a distância da esquerda em pixels */
+        
+        }    
+        
+}
+
+
+@media screen and  (max-width:1125px){ 
+    .container-slider {
+        position: absolute;
+        right: 700px;
+        top: 210px;
+   
+       } .container-slider2 {
+           position: absolute;
+           right: 470px;
+           top: 500px;
+      
+          }
+}
+
+
+
+
+
+
+
+
+@media screen and  (max-width:1024px){
+
+
+ 
+    #id-do-elemento-caixa{
+        width: 350px; /* Define a largura do campo de texto em pixels */
+        height: 350px; /* Define a altura do campo de texto em pixels */
+        position: absolute; /* Define a posição absoluta para o campo de texto */
+        top: 320px; /* Define a distância a partir do topo em pixels */
+        right: 80px; }
+        .container-slider {
+            position: absolute;
+            right: 650px;
+            top: 250px;
+       
+           } .container-slider2 {
+               position: absolute;
+               right: 420px;
+          
+          
+              }
+
+
+                                      
+#form-pesquisa {
+    position: absolute;
+    left: 60px;
+    top: 800px;
+}
+input[type="submit"] {
+    width: 100px; /* Define a largura do botão de envio em pixels */
+    height: 40px; /* Define a altura do botão de envio em pixels */
+    top: 600px;
+    position: absolute;
+
+}
+.enviar{
+    position: absolute;
+    left: 700px; /* Define a distância da esquerda em pixels */
+
+}    
+
+.botão-color1{
+    position: absolute;      
+    top: 890px;
+    left: 50px;
+    }
+    .botão-color2{
+        position: absolute;      
+        top: 890px;
+        left: 120px;
+        }    
+        .botão-color3{
+            position: absolute;      
+            top: 890px;
+            left: 190px;
+            }        
+            .botão-color4{
+                position: absolute;      
+                top: 890px;
+                left: 260px;
+                }  
+                .botão-color5{
+                    position: absolute;      
+                    top: 890px;
+                    left: 330px;
+                    }
+
+}
+@media screen and  (max-width:990px){
+    .container-slider {
+        position: absolute;
+        right: 620px;
+   
+       } .container-slider2 {
+           position: absolute;  
+           right: 390px;
+      
+          }
+
+}
+
+@media screen and  (max-width:950px){
+    
+    .enviar{
+        position: absolute;
+        left: 650px; /* Define a distância da esquerda em pixels */
+    
+}
+.container-slider {
+    position: absolute;
+    right: 590px;
+    top: 250px;
+
+   } .container-slider2 {
+       position: absolute;
+       right:360px;
+  
+  
+      }
+
+}
+@media screen and  (max-width:920px){
+    .container-slider {
+        position: absolute;
+        right: 560px;
+   
+       } .container-slider2 {
+           position: absolute;  
+           right: 320px;
+      
+          }
+          .enviar{
+            position: absolute;
+            left: 620px; /* Define a distância da esquerda em pixels */
+        
+    }
+
+}
+@media screen and  (max-width:870px){
+    .enviar{
+        position: absolute;
+        left: 560px; /* Define a distância da esquerda em pixels */
+    
+}
+.container-slider {
+    position: absolute;
+    right: 490px;
+    top: 250px;
+
+   } .container-slider2 {
+       position: absolute;
+       right:260px;
+  
+  
+      }
+}
+
+@media screen and  (max-width:850px){
+    .enviar{
+        position: absolute;
+        left: 550px; /* Define a distância da esquerda em pixels */
+    
+}
+.container-slider {
+    position: absolute;
+    right: 490px;
+    top: 250px;
+
+   } .container-slider2 {
+       position: absolute;
+       right:260px;
+  
+  
+      }
+}
+
+@media screen and  (max-width:820px){
+    
+ #id-do-elemento-caixa{
+        width: 550px; /* Define a largura do campo de texto em pixels */
+        height: 350px; /* Define a altura do campo de texto em pixels */
+        position: absolute; /* Define a posição absoluta para o campo de texto */
+        top: 900px; /* Define a distância a partir do topo em pixels */
+        right: 120px; }
+        .container-slider {
+            position: absolute;
+            right: 280px;
+            top: 200px;   
+           } .container-slider2 {
+               position: absolute;
+               right: 50px;
+               top: 500px;         
+              }
+
+#prev-button{
+    position: absolute ;
+    top: 20px;
+}
+#next-button{
+    position: absolute ;
+    top: 19px;
+}                               
+#form-pesquisa {
+    position: absolute;
+    left: 60px;
+    top: 800px;
+}
+input[type="submit"] {
+    width: 120px; /* Define a largura do botão de envio em pixels */
+    height: 50px; /* Define a altura do botão de envio em pixels */
+    top: 1200px;
+    position: absolute;
+
+}
+.enviar{
+    position: absolute;
+    left: 350px; /* Define a distância da esquerda em pixels */
+
+}    
+
+.botão-color1{
+    position: absolute;      
+    top: 800px;
+    left: 450px;
+    }
+    .botão-color2{
+        position: absolute;      
+        top: 800px;
+        left: 520px;
+        }    
+        .botão-color3{
+            position: absolute;      
+            top: 800px;
+            left: 590px;
+            }        
+            .botão-color4{
+                position: absolute;      
+                top: 800px;
+                left: 660px;
+                }  
+                .botão-color5{
+                    position: absolute;      
+                    top: 800px;
+                    left: 730px;
+                    }
+
+}
+
+
+@media screen and  ( max-width:772px){
+
+
+    
+ #id-do-elemento-caixa{
+        position: absolute; /* Define a posição absoluta para o campo de texto */
+        top: 900px; /* Define a distância a partir do topo em pixels */
+        right: 100px; }
+        .container-slider {
+            position: absolute;
+            right: 240px;
+            top: 180px;     
+           } .container-slider2 {
+               position: absolute;
+               right: 10px;
+               top: 500px;       
+              }                              
+#form-pesquisa {
+    position: absolute;
+    left: 40px;
+    top: 800px;
+}
+input[type="submit"] {
+    width: 100px; /* Define a largura do botão de envio em pixels */
+    height: 40px; /* Define a altura do botão de envio em pixels */
+    top: 1200px;
+    position: absolute;
+}
+.enviar{
+    position: absolute;
+    left: 320px; /* Define a distância da esquerda em pixels */
+}    
+.botão-color1{
+    position: absolute;      
+    top: 800px;
+    left: 400px;
+    }
+    .botão-color2{
+        position: absolute;      
+        top: 800px;
+        left: 470px;
+        }    
+        .botão-color3{
+            position: absolute;      
+            top: 800px;
+            left: 540px;
+            }        
+            .botão-color4{
+                position: absolute;      
+                top: 800px;
+                left: 610px;
+                }  
+                .botão-color5{
+                    position: absolute;      
+                    top: 800px;
+                    left: 680px;
+                    }
+}
+
+
+
+@media screen and  (max-width: 720px) {
+
+    #id-do-elemento-caixa  {
+        position: absolute; /* Define a posição absoluta para o campo de texto */
+        right: 80px; }
+        .enviar{
+            position: absolute;
+            left: 300px; /* Define a distância da esquerda em pixels */
+        }    
+        .botão-color1{
+            position: absolute;      
+            left: 370px;
+            }
+            .botão-color2{
+                position: absolute;      
+                left: 440px;
+                }    
+                .botão-color3{
+                    position: absolute;      
+                    left: 510px;
+                    }        
+                    .botão-color4{
+                        position: absolute;      
+                        left: 580px;
+                        }  
+                        .botão-color5{
+                            position: absolute;      
+                            left: 650px;
+                            }
+}
+
+@media screen and  (max-width: 680px) {
+  
+ #id-do-elemento-caixa {
+        position: absolute; /* Define a posição absoluta para o campo de texto */
+        right: 50px; }
+    .container-slider {
+        position: absolute;
+        right: 177px;
+   
+       } .container-slider2 {
+           position: absolute;  
+           right: -50px;
+      
+          }
+}
+@media screen and  (max-width: 650px) {
+   
+ #id-do-elemento-caixa{
+        position: absolute; /* Define a posição absoluta para o campo de texto */
+        right: 30px; }
+    #form-pesquisa {
+        position: absolute;
+        left: 10px;
+      
+    }
+    .botão-color1{
+        position: absolute;      
+        left: 340px;
+        }
+        .botão-color2{
+            position: absolute;      
+            left: 410px;
+            }    
+            .botão-color3{
+                position: absolute;      
+                left: 480px;
+                }        
+                .botão-color4{
+                    position: absolute;      
+                    left: 550px;
+                    }  
+                    .botão-color5{
+                        position: absolute;      
+                        left: 620px;
+                        }
+}      
+@media screen and  (max-width: 620px) {
+    
+    #id-do-elemento-caixa {
+        position: absolute; /* Define a posição absoluta para o campo de texto */
+        right: 10px; }
+        .container-slider {
+            position: absolute;
+            right: 160px;
+           } .container-slider2 {
+               position: absolute;
+               right:-80px;
+              }
+           
+}
+@media screen and  (max-width: 580px) {
+ 
+    #id-do-elemento-caixa{
+        position: absolute; /* Define a posição absoluta para o campo de texto */
+        right: -100px; 
+        top: 920px;
+    }
+    .container-slider {
+        position: absolute;
+        right:40px;
+       } .container-slider2 {
+           position: absolute;
+           right:-200px;
+          }
+          .botão-color1{
+            position: absolute;      
+            left: 380px;
+            top: 770px;
+            }
+            .botão-color2{
+                position: absolute;      
+                left: 450px;
+                top: 770px;
+                }    
+                .botão-color3{
+                    position: absolute;      
+                    left: 520px;
+                    top: 770px;
+                    }        
+                    .botão-color4{
+                        position: absolute;      
+                        left: 590px;
+                        top: 770px;
+                        }  
+                        .botão-color5{
+                            position: absolute;      
+                            left: 660px;
+                            top: 770px;
+                            }
+                            #form-pesquisa {
+                                position: absolute;
+                                left: 50px;
+                                top: 770px;
+                            }
+                            .enviar{
+                                position: absolute;       
+                                left: 350px;
+                            }
+}
+@media screen and  (max-width: 520px) {
+  
+ #id-do-elemento-caixa{
+        position: absolute; /* Define a posição absoluta para o campo de texto */
+        right: -120px; }
+        .enviar{
+            position: absolute;       
+            left: 320px;
+        }
+}
+@media screen and  (max-width: 500px) {
+    .container-slider {       
+        position: absolute; /* Remover a posição absoluta */  
+        top: 200px; /* Adicionar margem no topo, se necessário */
+        right: 90px; /* Remover o deslocamento para a direita */
+    }
+    .container-slider2 {          
+        position: absolute; /* Remover a posição absoluta */
+        top: 500px; /* Adicionar margem no topo, se necessário */
+        right: -40px; /* Remover o deslocamento para a direita */
+    width: 500px;
+    }
+    #prev-button2{
+        position: absolute;
+        right:430px ;
+    }
+  
+ #id-do-elemento-caixa   {
+        width: 330px; /* Define a largura do campo de texto em pixels */
+        height: 200px; /* Define a altura do campo de texto em pixels */
+        position: absolute; /* Define a posição absoluta para o campo de texto */
+        top: 950px; /* Define a distância a partir do topo em pixels */
+        right: 70px; 
+      
+        
+    }
+    input[type="submit"] {       
+        position: absolute; /* Define a posição absoluta para o botão de envio */
+        top: 1100px; /* Define a distância a partir do topo em pixels */
+       
+    }
+    .enviar{
+        position: absolute;       
+        left: 205px;
+    }
+    .botão-color1{
+        position: absolute;      
+        top: 840px;
+        left: 90px;
+        }
+        .botão-color2{
+            position: absolute;                
+            top: 840px;
+            left: 160px;
+            }    
+            .botão-color3{
+                position: absolute;      
+                top: 840px;
+                left: 230px;
+                }        
+                .botão-color4{
+                    position: absolute;      
+                    top: 840px;
+                    left: 300px;
+                    }  
+                    .botão-color5{
+                        position: absolute;      
+                        top: 840px;
+                        left: 370px;
+                        }
+                        
+#form-pesquisa {
+    position: absolute;
+    top: 770px;
+    left: 100px;
+                          }
+   
+}
+@media screen and  (max-width: 460px){
+ 
+    #id-do-elemento-caixa  {
+        position: absolute; /* Define a posição absoluta para o campo de texto */
+        right: 30px; }      
+        .container-slider {
+            position: absolute;
+            right:70px;
+           } .container-slider2 {
+               position: absolute;
+               right:-70px;
+              }
+}
+@media screen and  (max-width: 410px){
+   
+ #id-do-elemento-caixa{
+        position: absolute; /* Define a posição absoluta para o campo de texto */
+        right: -10px; }      
+        .container-slider {
+            position: absolute;
+            right:10px;
+           } .container-slider2 {
+               position: absolute;
+               right:-110px;
+              }
+}
+ 
+ @media screen and (max-width: 375px) {
+    .container-slider {
+        position: absolute; /* Remover a posição absoluta */  
+        top:200px; /* Adicionar margem no topo, se necessário */
+        right: 10px; /* Remover o deslocamento para a direita */
+    }
+.container-images{
+    width: 200px;
+}
+#prev-button{
+    position: absolute;
+    right: 260px;
+}#next-button{
+    position: absolute;
+    right: -10px;
+}
+    .container-slider2 {          
+        position: absolute; /* Remover a posição absoluta */
+        top: 500px; /* Adicionar margem no topo, se necessário */
+        right: -100px; /* Remover o deslocamento para a direita */
+    }
+    #prev-button2{
+        position: absolute;
+        right: 380px;
+    }#next-button2{
+        position: absolute;
+        top: 1px;
+        right: 70px;
+    }
+   
+ #id-do-elemento-caixa{
+        width: 330px; /* Define a largura do campo de texto em pixels */
+        height: 200px; /* Define a altura do campo de texto em pixels */
+        position: absolute; /* Define a posição absoluta para o campo de texto */
+        top: 1000px; /* Define a distância a partir do topo em pixels */
+        right: -20px; 
+      
+        
+    }
+    input[type="submit"] {       
+        position: absolute; /* Define a posição absoluta para o botão de envio */
+        top: 1130px; /* Define a distância a partir do topo em pixels */
+       
+    }
+    .enviar{
+        position: absolute;       
+        left: 190px;
+    }
+    .botão-color1{
+        position: absolute;      
+        top: 880px;
+        left: 50px;
+        }
+        .botão-color2{
+            position: absolute;                
+            top: 880px;
+            left: 120px;
+            }    
+            .botão-color3{
+                position: absolute;      
+                top: 880px;
+                left: 190px;
+                }        
+                .botão-color4{
+                    position: absolute;      
+                    top: 880px;
+                    left: 260px;
+                    }  
+                    .botão-color5{
+                        position: absolute;      
+                        top: 880px;
+                        left: 330px;
+                        }
+                        
+#form-pesquisa {
+    position: absolute;
+    top: 800px;
+    left: 60px;
+                          }
+}
+
+
+@media screen and  (max-width: 340px){
+ 
+    #id-do-elemento-caixa{
+        position: absolute; /* Define a posição absoluta para o campo de texto */
+        right: -50px; }      
+        .container-slider {
+            position: absolute;
+            right:-20px;
+           } .container-slider2 {
+               position: absolute;
+               right: -130px;
+              }
+              .enviar{
+                position: absolute;       
+                left: 160px;
+            }
+}
+@media screen and  (max-width: 300px){
+    .container-slider {
+        position: absolute;
+        right:-70px;
+       } .container-slider2 {
+           position: absolute;
+           right: -180px;
+          }
+          #form-pesquisa {
+            position: absolute;
+            top: 800px;
+            left: 80px;
+                                  }
+.botão-color1{
+        position: absolute;      
+        left: 70px;
+ }
+.botão-color2{
+        position: absolute;                
+        left: 140px;
+}    
+.botão-color3{
+        position: absolute;      
+        left: 210px;
+}        
+.botão-color4{
+         position: absolute;      
+         left: 280px;
+}  
+.botão-color5{
+        position: absolute;      
+        left: 350px;
+}
+
+#id-do-elemento-caixa {
+    position: absolute; /* Define a posição absoluta para o campo de texto */
+    right: -100px; }  
+    .enviar{
+        position: absolute;       
+        left: 180px;
+    }
+}
+@media screen and  (max-width: 280px){
+    .container-slider {
+        position: absolute;
+        right:-90px;
+       } .container-slider2 {
+           position: absolute;
+           right: -200px;
+          }
+         
+ #id-do-elemento-caixa{
+            position: absolute; /* Define a posição absoluta para o campo de texto */
+            right: -100px; }  
+}
+
+

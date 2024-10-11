@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Jost&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Imagens/LogoGG.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu perfil</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="..\Celfix Menu\index.html" class="logo">
+                <img src="Imagens/logo.svg" alt="Logo CelFix" title="Voltar para menu CelFix" class="logo1">
+                <img src="Imagens/logoGG.svg" alt="Logo grande" title="Voltar para menu CelFix" class="logo2">
+            </a>
+            <ul class="nav-menu">  
+                <li class="searchbar">
+                <div class="search"><hr>
+                    <input type="text" name="" placeholder="Pesquisar" class="search-box">
+                </div>
+                    <a class="searchbtn" href="#"><img src="Imagens/search.svg" alt="Pesquise" title="Pesquisar"><div class="searchbnt-a"></div></a>
+                    <a class="microfone" href="#"><img src="Imagens/mic_none_black_24dp.svg" alt="Microfone" title="Pesquisar por voz"><div class="searchbnt-b"></div></a>
+                </li>         
+            <div class="nav-cat">
+                <li class="nav-item"><a href="#" class="nav-link">Mais vendidos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Ofertas diárias</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Frete grátis</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Para presente</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Celulares</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Acessórios</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Fones de ouvido</a></li>
+            </div>
+            </ul>
+            <ul class="nav-list">
+                <li><a href="..\Celfix perifl\index.html">Meu perfil</a></li>
+                <li><a href="#">Sua Lista de desejos</a></li>
+                <li><a href="#">Protocolos</a></li>
+                <li><a href="#">Dúvidas frequêntes</a></li>
+                <li><a href="#">Suporte</a></li>
+            </ul>
+            <div class="menuhover" id="elemento-oculto">
+                <a href="#" class="caixa"><img src="Imagens/box.svg" alt="pedidos" title="Meus pedidos"></a>
+                <a href="#" class="sacola"><img src="Imagens/shopping-bag.svg" alt="sacola" title="Sacola de compras"></a>
+            </div>
+            <div class="menu-perfil" id="elemento-acionador" title="Menu">
+                <a class="menu"><img src="Imagens/person.svg" alt="perfil"></a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="meu-perfil">
+            <p>
+                Extensão de arquivo: .JPEG .PNG <br>
+                Tamanha: 640x480 | 1920x1080
+            </p>
+            <a href="#" title="Trocar foto">
+                <div class="foto">
+                    <img src="Imagens/person.svg" alt="Foto de perfil" class="perfil">
+                </div>
+            </a>
+                <div class="camera-foto">
+                    <img src="Imagens/camera.svg" alt="Camera" class="camera">
+                </div>
+        </div>
+        
+        <div class="formulario">
+        <form method="post" class="fo">
+            <div class="txt_field seg1">
+                <input type="text" required class="in1">
+                <span></span>
+                <label>Nome de usuário</label>
+            </div>
+        </form>
+        <form method="post" class="fo2">
+            <div class="txt_field seg2">
+                <input type="text" required class="in2">
+                <span></span>
+                <div class="alterar">
+                    <div class="item fe" id="item1">Feminino</div>
+                    <div class="item ma" id="item2">Masculino</div>
+                </div>
+                <label>Nome</label>
+            </div>
+        </form>
+        <form method="post" class="fo3">
+            <div class="txt_field seg3">
+                <input type="text" required class="in3">
+                <span></span>
+                <label>Email</label>
+            </div>
+        </form>
+        <form method="post" class="fo4">
+            <div class="txt_field seg4">
+                <input type="password" required class="in4">
+                <span></span>
+                <label>Senha</label>
+            </div>
+        </form>
+        <form method="post" class="fo5">
+            <div class="txt_field seg5">
+                <input type="number" required class="in5">
+                <span></span>
+                <label>Celular</label>
+            </div>
+        </form>
+        <form method="post" class="fo6">
+            <div class="txt_field seg6">
+                <input type="date" required class="in6">
+                <span></span>
+                <label>Data de nascimento</label>
+            </div>
+        </form>
+
+        <a><input type="submit" value="Salvar"></a>
+
+        
+    </div>
+
+        
+        
+        
+
+        
+
+    </main>
+
+
+    <footer>
+
+    </footer>
+
+    <script src="acionador.js"></script>
+    
+</body>
+</html>

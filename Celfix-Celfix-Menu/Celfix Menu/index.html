@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Jost&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../Imagens/LogoGG.png">
+    <link rel="stylesheet" href="style.css">
+    <title>CelFix</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="../Imagens/logo.svg" alt="Logo CelFix" title="Voltar para menu CelFix" class="logo1">
+                <img src="../Imagens/logoGG.svg" alt="Logo grande" title="Voltar para menu CelFix" class="logo2">
+            </a>
+            <ul class="nav-menu">  
+                <li class="searchbar">
+                    <div class="search">
+                        <div class="back"><img src="../Imagens/close_FILL0_wght400_GRAD0_opsz24.svg"><a>Desculpe, não encontramos nenhum produto.</a></div>
+                        <input id="searchInput" onkeyup="filtrar()" type="text" name="" placeholder="Pesquisar" class="search-box">
+                        <ul class="list">
+                        </ul>
+                    </div>
+                        <a class="searchbtn" target="_blank"><img src="../Imagens/search.svg" alt="Pesquise"><div class="searchbnt-a" title="Pesquisar"></div></a>
+                        <a class="microfone" id="voiceBtn"><img src="../Imagens/mic_none_black_24dp.svg" alt="Microfone" title="Pesquisar por voz" class="mic"><img src="../Imagens/micred.svg" class="micred"><div class="searchbnt-b"></div></a>
+                </li>
+            </ul>
+            <ul class="nav-list">
+                <li><a href="#" class="meu-perfil"><div class="back1"><img src="../Imagens/person white.svg" alt="Foto do perfil"></div><div class="name-meu_perfil">Meu perfil</div></a></li>
+                <hr>
+                <li><a href="#"><img src="../Imagens/Lista.svg" class="IMG1">    Sua Lista de desejos</a></li>
+                <li><a href="#"><img src="../Imagens/map.svg" class="IMG2">    Mapa</a></li>
+                <li><a href="#"><img src="../Imagens/ques.svg" class="IMG3">    Dúvidas frequêntes</a></li>
+                <li><a href="#"><img src="../Imagens/help.svg" class="IMG4">    Suporte</a></li>
+            </ul>
+            <div class="fotoperfil">
+                <a class="menu"><img src="../Imagens/person.svg" alt="perfil" class="boneco"><img src="../Imagens/close_FILL0_wght400_GRAD0_opsz24.svg" alt="Fechar" class="xis"></a>
+            </div>
+            <div class="menu-perfil" id="elemento-acionador" title="Menu">
+                <a class="menu"><img src="../Imagens/person.svg" alt="perfil" class="boneco"><img src="../Imagens/close_FILL0_wght400_GRAD0_opsz24.svg" alt="Fechar" class="xis"></a>
+
+                <div class="menuhover" id="elemento-oculto">
+                    <a href="#" class="caixa"><img src="../Imagens/box.svg" alt="pedidos" title="Meus pedidos"></a>
+                    <a href="#" class="sacola"><img src="../Imagens/shopping-bag.svg" alt="sacola" title="Sacola de compras"></a>
+                </div>
+            </div>
+        </nav>
+        <script src="autocompletar.js"></script>
+    </header>
+    <div class="complemento"></div>
+    <div class="nav-cat">
+        <li class="nav-item"><a href="#" class="nav-link">Mais vendidos</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Ofertas diárias</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Frete grátis</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Para presente</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Celulares</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Acessórios</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Fones de ouvido</a></li>
+    </div>
+
+
+    <main>
+
+
+        <div class="slider">
+            <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="slide first">
+                        <img src="../Imagens/banner1.png" alt="Banner 1">
+                    </div>
+                    <div class="slide">
+                        <img src="../Imagens/banner2.png" alt="Banner 2">
+                    </div>
+                    <div class="slide">
+                        <img src="../Imagens/banner3.png" alt="Banner 3">
+                    </div>
+                    <div class="slide">
+                        <img src="../Imagens/banner4.png" alt="Banner 3">
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+            </div>
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+
+        <div class="botoes">
+            <div class="btnloja">
+                <a href="..\Celfix Loja\index.html" class="Loja"><img src="../Imagens/lojabtn.svg" alt="Ir a loja"></a>
+            </div>
+            <div class="btnreparo">
+                <a href="../Celfix Assistencia/assistencia.html" class="Reparo"><img src="../Imagens/reparobtn.svg" alt="Ir a reparo"></a>
+            </div>
+        </div>
+
+        
+        <div class="carousel">
+            <p class="categoria">Inspirado no seu histórico de navegação</p>
+            <div class="carousel-inner" id="carousel-inner">
+
+              <div class="carousel-item">
+
+                  <div class="card1">
+                      <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><img class="item" src="../Imagens/a34.svg" alt="Samsung Galaxy A34 128GB 5G"></a>
+                      <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><p class="nome">Samsung Galaxy <br> A34 128GB 5G</p></a>
+                      <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">12.382</p>
+                      <p class="rs">R$</p>
+                      <p class="valor">1.600,00</p>
+                      <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                  </div>
+          
+                  <div class="card2">
+                      <a href="#"><img class="item" src="../Imagens/s23u.svg" alt="Samsung Galaxy S23 Ultra 5G 256GB"></a>
+                      <a href="#"><p class="nome">Samsung Galaxy <br> S23 Ultra 5G 256GB</p></a>
+                      <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.422</p>
+                      <p class="rs">R$</p>
+                      <p class="valor">5.600,00</p>
+                      <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                  </div>
+          
+                  <div class="card3">
+                      <a href="#"><img class="item" src="../Imagens/capinha.svg" alt="Capa Transparente Mag-Safe S23 Ultra"></a>
+                      <a href="#"><p class="nome">Capa Transparente <br> Mag-Safe S23 Ultra</p></a>
+                      <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">345</p>
+                      <p class="rs">R$</p>
+                      <p class="valor">29,00</p>
+                      <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                  </div>
+          
+                  <div class="card4">
+                      <a href="#"><img class="item" src="../Imagens/fone.svg" alt="Fone de Ouvido Bluetooth 5.0"></a>
+                      <a href="#"><p class="nome">Fone de Ouvido Bluetooth 5.0</p></a>
+                      <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.389</p>
+                      <p class="rs">R$</p>
+                      <p class="valor">23,50</p>
+                      <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                  </div>
+          
+                  <div class="card5">
+                      <a href="#"><img class="item" src="../Imagens/limpador.svg" alt="Limpeza de teclado com Cleaner 5 em 1"></a>
+                      <a href="#"><p class="nome">Limpeza de teclado com Cleaner 5 em 1</p></a>
+                      <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">872</p>
+                      <p class="rs">R$</p>
+                      <p class="valor">27,59</p>
+                      <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                  </div>
+              </div>
+
+              <div class="carousel-item">
+
+                <div class="card1">
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><img class="item" src="../Imagens/a34.svg" alt="Samsung Galaxy A34 128GB 5G"></a>
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><p class="nome">Samsung Galaxy <br> A34 128GB 5G</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">12.382</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">1.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card2">
+                    <a href="#"><img class="item" src="../Imagens/s23u.svg" alt="Samsung Galaxy S23 Ultra 5G 256GB"></a>
+                    <a href="#"><p class="nome">Samsung Galaxy <br> S23 Ultra 5G 256GB</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.422</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">5.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card3">
+                    <a href="#"><img class="item" src="../Imagens/capinha.svg" alt="Capa Transparente Mag-Safe S23 Ultra"></a>
+                    <a href="#"><p class="nome">Capa Transparente <br> Mag-Safe S23 Ultra</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">345</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">29,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card4">
+                    <a href="#"><img class="item" src="../Imagens/fone.svg" alt="Fone de Ouvido Bluetooth 5.0"></a>
+                    <a href="#"><p class="nome">Fone de Ouvido Bluetooth 5.0</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.389</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">23,50</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card5">
+                    <a href="#"><img class="item" src="../Imagens/limpador.svg" alt="Limpeza de teclado com Cleaner 5 em 1"></a>
+                    <a href="#"><p class="nome">Limpeza de teclado com Cleaner 5 em 1</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">872</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">27,59</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+              </div>
+
+              <div class="carousel-item">
+
+                <div class="card1">
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><img class="item" src="../Imagens/a34.svg" alt="Samsung Galaxy A34 128GB 5G"></a>
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><p class="nome">Samsung Galaxy <br> A34 128GB 5G</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">12.382</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">1.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card2">
+                    <a href="#"><img class="item" src="../Imagens/s23u.svg" alt="Samsung Galaxy S23 Ultra 5G 256GB"></a>
+                    <a href="#"><p class="nome">Samsung Galaxy <br> S23 Ultra 5G 256GB</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.422</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">5.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card3">
+                    <a href="#"><img class="item" src="../Imagens/capinha.svg" alt="Capa Transparente Mag-Safe S23 Ultra"></a>
+                    <a href="#"><p class="nome">Capa Transparente <br> Mag-Safe S23 Ultra</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">345</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">29,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card4">
+                    <a href="#"><img class="item" src="../Imagens/fone.svg" alt="Fone de Ouvido Bluetooth 5.0"></a>
+                    <a href="#"><p class="nome">Fone de Ouvido Bluetooth 5.0</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.389</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">23,50</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card5">
+                    <a href="#"><img class="item" src="../Imagens/limpador.svg" alt="Limpeza de teclado com Cleaner 5 em 1"></a>
+                    <a href="#"><p class="nome">Limpeza de teclado com Cleaner 5 em 1</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">872</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">27,59</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+              </div>
+
+              <div class="carousel-item-2">
+
+                <div class="card1">
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><img class="item" src="../Imagens/a34.svg" alt="Samsung Galaxy A34 128GB 5G"></a>
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><p class="nome">Samsung Galaxy <br> A34 128GB 5G</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">12.382</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">1.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card2">
+                    <a href="#"><img class="item" src="../Imagens/s23u.svg" alt="Samsung Galaxy S23 Ultra 5G 256GB"></a>
+                    <a href="#"><p class="nome">Samsung Galaxy <br> S23 Ultra 5G 256GB</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.422</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">5.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card3">
+                    <a href="#"><img class="item" src="../Imagens/capinha.svg" alt="Capa Transparente Mag-Safe S23 Ultra"></a>
+                    <a href="#"><p class="nome">Capa Transparente <br> Mag-Safe S23 Ultra</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">345</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">29,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card4">
+                    <a href="#"><img class="item" src="../Imagens/fone.svg" alt="Fone de Ouvido Bluetooth 5.0"></a>
+                    <a href="#"><p class="nome">Fone de Ouvido Bluetooth 5.0</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.389</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">23,50</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card5">
+                    <a href="#"><img class="item" src="../Imagens/limpador.svg" alt="Limpeza de teclado com Cleaner 5 em 1"></a>
+                    <a href="#"><p class="nome">Limpeza de teclado com Cleaner 5 em 1</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">872</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">27,59</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+
+                <div class="card6">
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><img class="item" src="../Imagens/a34.svg" alt="Samsung Galaxy A34 128GB 5G"></a>
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><p class="nome">Samsung Galaxy <br> A34 128GB 5G</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">12.382</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">1.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card7">
+                    <a href="#"><img class="item" src="../Imagens/s23u.svg" alt="Samsung Galaxy S23 Ultra 5G 256GB"></a>
+                    <a href="#"><p class="nome">Samsung Galaxy <br> S23 Ultra 5G 256GB</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.422</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">5.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card8">
+                    <a href="#"><img class="item" src="../Imagens/capinha.svg" alt="Capa Transparente Mag-Safe S23 Ultra"></a>
+                    <a href="#"><p class="nome">Capa Transparente <br> Mag-Safe S23 Ultra</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">345</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">29,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card9">
+                    <a href="#"><img class="item" src="../Imagens/fone.svg" alt="Fone de Ouvido Bluetooth 5.0"></a>
+                    <a href="#"><p class="nome">Fone de Ouvido Bluetooth 5.0</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.389</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">23,50</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card10">
+                    <a href="#"><img class="item" src="../Imagens/limpador.svg" alt="Limpeza de teclado com Cleaner 5 em 1"></a>
+                    <a href="#"><p class="nome">Limpeza de teclado com Cleaner 5 em 1</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">872</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">27,59</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+
+                <div class="card11">
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><img class="item" src="../Imagens/a34.svg" alt="Samsung Galaxy A34 128GB 5G"></a>
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><p class="nome">Samsung Galaxy <br> A34 128GB 5G</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">12.382</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">1.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card12">
+                    <a href="#"><img class="item" src="../Imagens/s23u.svg" alt="Samsung Galaxy S23 Ultra 5G 256GB"></a>
+                    <a href="#"><p class="nome">Samsung Galaxy <br> S23 Ultra 5G 256GB</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.422</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">5.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card13">
+                    <a href="#"><img class="item" src="../Imagens/capinha.svg" alt="Capa Transparente Mag-Safe S23 Ultra"></a>
+                    <a href="#"><p class="nome">Capa Transparente <br> Mag-Safe S23 Ultra</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">345</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">29,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card14">
+                    <a href="#"><img class="item" src="../Imagens/fone.svg" alt="Fone de Ouvido Bluetooth 5.0"></a>
+                    <a href="#"><p class="nome">Fone de Ouvido Bluetooth 5.0</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.389</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">23,50</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card15">
+                    <a href="#"><img class="item" src="../Imagens/limpador.svg" alt="Limpeza de teclado com Cleaner 5 em 1"></a>
+                    <a href="#"><p class="nome">Limpeza de teclado com Cleaner 5 em 1</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">872</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">27,59</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+
+                <div class="cardfim">
+                    <p>Você chegou <br> ao fim</p>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="carousel-controls">
+              <div class="carousel-control" id="prev"><button class="btn2" id="btn2"><img src="../Imagens/seta_left.svg" alt="passar"></button></div>
+              <div class="carousel-control" id="next"><button class="btn1" id="btn1"><img src="../Imagens/seta_right.svg" alt="voltar"></button></div>
+            </div>
+          </div>
+
+          <div class="carousel">
+            <p class="categoria">Produtos mais vendidos</p>
+            <div class="carousel-inner" id="carousel-inner2">
+
+              <div class="carousel-item">
+
+                  <div class="card1">
+                      <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><img class="item" src="../Imagens/a34.svg" alt="Samsung Galaxy A34 128GB 5G"></a>
+                      <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><p class="nome">Samsung Galaxy <br> A34 128GB 5G</p></a>
+                      <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">12.382</p>
+                      <p class="rs">R$</p>
+                      <p class="valor">1.600,00</p>
+                      <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                  </div>
+          
+                  <div class="card2">
+                      <a href="#"><img class="item" src="../Imagens/s23u.svg" alt="Samsung Galaxy S23 Ultra 5G 256GB"></a>
+                      <a href="#"><p class="nome">Samsung Galaxy <br> S23 Ultra 5G 256GB</p></a>
+                      <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.422</p>
+                      <p class="rs">R$</p>
+                      <p class="valor">5.600,00</p>
+                      <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                  </div>
+          
+                  <div class="card3">
+                      <a href="#"><img class="item" src="../Imagens/capinha.svg" alt="Capa Transparente Mag-Safe S23 Ultra"></a>
+                      <a href="#"><p class="nome">Capa Transparente <br> Mag-Safe S23 Ultra</p></a>
+                      <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">345</p>
+                      <p class="rs">R$</p>
+                      <p class="valor">29,00</p>
+                      <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                  </div>
+          
+                  <div class="card4">
+                      <a href="#"><img class="item" src="../Imagens/fone.svg" alt="Fone de Ouvido Bluetooth 5.0"></a>
+                      <a href="#"><p class="nome">Fone de Ouvido Bluetooth 5.0</p></a>
+                      <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.389</p>
+                      <p class="rs">R$</p>
+                      <p class="valor">23,50</p>
+                      <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                  </div>
+          
+                  <div class="card5">
+                      <a href="#"><img class="item" src="../Imagens/limpador.svg" alt="Limpeza de teclado com Cleaner 5 em 1"></a>
+                      <a href="#"><p class="nome">Limpeza de teclado com Cleaner 5 em 1</p></a>
+                      <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">872</p>
+                      <p class="rs">R$</p>
+                      <p class="valor">27,59</p>
+                      <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                  </div>
+              </div>
+
+              <div class="carousel-item">
+
+                <div class="card1">
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><img class="item" src="../Imagens/a34.svg" alt="Samsung Galaxy A34 128GB 5G"></a>
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><p class="nome">Samsung Galaxy <br> A34 128GB 5G</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">12.382</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">1.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card2">
+                    <a href="#"><img class="item" src="../Imagens/s23u.svg" alt="Samsung Galaxy S23 Ultra 5G 256GB"></a>
+                    <a href="#"><p class="nome">Samsung Galaxy <br> S23 Ultra 5G 256GB</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.422</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">5.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card3">
+                    <a href="#"><img class="item" src="../Imagens/capinha.svg" alt="Capa Transparente Mag-Safe S23 Ultra"></a>
+                    <a href="#"><p class="nome">Capa Transparente <br> Mag-Safe S23 Ultra</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">345</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">29,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card4">
+                    <a href="#"><img class="item" src="../Imagens/fone.svg" alt="Fone de Ouvido Bluetooth 5.0"></a>
+                    <a href="#"><p class="nome">Fone de Ouvido Bluetooth 5.0</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.389</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">23,50</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card5">
+                    <a href="#"><img class="item" src="../Imagens/limpador.svg" alt="Limpeza de teclado com Cleaner 5 em 1"></a>
+                    <a href="#"><p class="nome">Limpeza de teclado com Cleaner 5 em 1</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">872</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">27,59</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+              </div>
+
+              <div class="carousel-item">
+
+                <div class="card1">
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><img class="item" src="../Imagens/a34.svg" alt="Samsung Galaxy A34 128GB 5G"></a>
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><p class="nome">Samsung Galaxy <br> A34 128GB 5G</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">12.382</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">1.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card2">
+                    <a href="#"><img class="item" src="../Imagens/s23u.svg" alt="Samsung Galaxy S23 Ultra 5G 256GB"></a>
+                    <a href="#"><p class="nome">Samsung Galaxy <br> S23 Ultra 5G 256GB</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.422</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">5.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card3">
+                    <a href="#"><img class="item" src="../Imagens/capinha.svg" alt="Capa Transparente Mag-Safe S23 Ultra"></a>
+                    <a href="#"><p class="nome">Capa Transparente <br> Mag-Safe S23 Ultra</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">345</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">29,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card4">
+                    <a href="#"><img class="item" src="../Imagens/fone.svg" alt="Fone de Ouvido Bluetooth 5.0"></a>
+                    <a href="#"><p class="nome">Fone de Ouvido Bluetooth 5.0</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.389</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">23,50</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card5">
+                    <a href="#"><img class="item" src="../Imagens/limpador.svg" alt="Limpeza de teclado com Cleaner 5 em 1"></a>
+                    <a href="#"><p class="nome">Limpeza de teclado com Cleaner 5 em 1</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">872</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">27,59</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+              </div>
+
+              <div class="carousel-item-2">
+
+                <div class="card1">
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><img class="item" src="../Imagens/a34.svg" alt="Samsung Galaxy A34 128GB 5G"></a>
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><p class="nome">Samsung Galaxy <br> A34 128GB 5G</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">12.382</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">1.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card2">
+                    <a href="#"><img class="item" src="../Imagens/s23u.svg" alt="Samsung Galaxy S23 Ultra 5G 256GB"></a>
+                    <a href="#"><p class="nome">Samsung Galaxy <br> S23 Ultra 5G 256GB</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.422</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">5.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card3">
+                    <a href="#"><img class="item" src="../Imagens/capinha.svg" alt="Capa Transparente Mag-Safe S23 Ultra"></a>
+                    <a href="#"><p class="nome">Capa Transparente <br> Mag-Safe S23 Ultra</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">345</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">29,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card4">
+                    <a href="#"><img class="item" src="../Imagens/fone.svg" alt="Fone de Ouvido Bluetooth 5.0"></a>
+                    <a href="#"><p class="nome">Fone de Ouvido Bluetooth 5.0</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.389</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">23,50</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card5">
+                    <a href="#"><img class="item" src="../Imagens/limpador.svg" alt="Limpeza de teclado com Cleaner 5 em 1"></a>
+                    <a href="#"><p class="nome">Limpeza de teclado com Cleaner 5 em 1</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">872</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">27,59</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+
+                <div class="card6">
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><img class="item" src="../Imagens/a34.svg" alt="Samsung Galaxy A34 128GB 5G"></a>
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><p class="nome">Samsung Galaxy <br> A34 128GB 5G</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">12.382</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">1.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card7">
+                    <a href="#"><img class="item" src="../Imagens/s23u.svg" alt="Samsung Galaxy S23 Ultra 5G 256GB"></a>
+                    <a href="#"><p class="nome">Samsung Galaxy <br> S23 Ultra 5G 256GB</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.422</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">5.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card8">
+                    <a href="#"><img class="item" src="../Imagens/capinha.svg" alt="Capa Transparente Mag-Safe S23 Ultra"></a>
+                    <a href="#"><p class="nome">Capa Transparente <br> Mag-Safe S23 Ultra</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">345</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">29,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card9">
+                    <a href="#"><img class="item" src="../Imagens/fone.svg" alt="Fone de Ouvido Bluetooth 5.0"></a>
+                    <a href="#"><p class="nome">Fone de Ouvido Bluetooth 5.0</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.389</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">23,50</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card10">
+                    <a href="#"><img class="item" src="../Imagens/limpador.svg" alt="Limpeza de teclado com Cleaner 5 em 1"></a>
+                    <a href="#"><p class="nome">Limpeza de teclado com Cleaner 5 em 1</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">872</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">27,59</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+
+                <div class="card11">
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><img class="item" src="../Imagens/a34.svg" alt="Samsung Galaxy A34 128GB 5G"></a>
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><p class="nome">Samsung Galaxy <br> A34 128GB 5G</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">12.382</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">1.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card12">
+                    <a href="#"><img class="item" src="../Imagens/s23u.svg" alt="Samsung Galaxy S23 Ultra 5G 256GB"></a>
+                    <a href="#"><p class="nome">Samsung Galaxy <br> S23 Ultra 5G 256GB</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.422</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">5.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card13">
+                    <a href="#"><img class="item" src="../Imagens/capinha.svg" alt="Capa Transparente Mag-Safe S23 Ultra"></a>
+                    <a href="#"><p class="nome">Capa Transparente <br> Mag-Safe S23 Ultra</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">345</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">29,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card14">
+                    <a href="#"><img class="item" src="../Imagens/fone.svg" alt="Fone de Ouvido Bluetooth 5.0"></a>
+                    <a href="#"><p class="nome">Fone de Ouvido Bluetooth 5.0</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.389</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">23,50</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card15">
+                    <a href="#"><img class="item" src="../Imagens/limpador.svg" alt="Limpeza de teclado com Cleaner 5 em 1"></a>
+                    <a href="#"><p class="nome">Limpeza de teclado com Cleaner 5 em 1</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">872</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">27,59</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+
+                <div class="cardfim">
+                    <p>Você chegou <br> ao fim</p>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="carousel-controls">
+                <div class="carousel-control" id="prev2"><button class="btn2"><img src="../Imagens/seta_left.svg" alt="passar"></button></div>
+                <div class="carousel-control" id="next2"><button class="btn1"><img src="../Imagens/seta_right.svg" alt="voltar"></button></div>
+            </div>
+          </div>
+
+          <div class="carousel">
+            <p class="categoria">Produtos em DESCONTO</p>
+            <div class="carousel-inner" id="carousel-inner3">
+
+              <div class="carousel-item">
+
+                  <div class="card1">
+                      <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><img class="item" src="../Imagens/a34.svg" alt="Samsung Galaxy A34 128GB 5G"></a>
+                      <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><p class="nome">Samsung Galaxy <br> A34 128GB 5G</p></a>
+                      <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">12.382</p>
+                      <p class="rs">R$</p>
+                      <p class="valor">1.600,00</p>
+                      <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                  </div>
+          
+                  <div class="card2">
+                      <a href="#"><img class="item" src="../Imagens/s23u.svg" alt="Samsung Galaxy S23 Ultra 5G 256GB"></a>
+                      <a href="#"><p class="nome">Samsung Galaxy <br> S23 Ultra 5G 256GB</p></a>
+                      <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.422</p>
+                      <p class="rs">R$</p>
+                      <p class="valor">5.600,00</p>
+                      <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                  </div>
+          
+                  <div class="card3">
+                      <a href="#"><img class="item" src="../Imagens/capinha.svg" alt="Capa Transparente Mag-Safe S23 Ultra"></a>
+                      <a href="#"><p class="nome">Capa Transparente <br> Mag-Safe S23 Ultra</p></a>
+                      <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">345</p>
+                      <p class="rs">R$</p>
+                      <p class="valor">29,00</p>
+                      <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                  </div>
+          
+                  <div class="card4">
+                      <a href="#"><img class="item" src="../Imagens/fone.svg" alt="Fone de Ouvido Bluetooth 5.0"></a>
+                      <a href="#"><p class="nome">Fone de Ouvido Bluetooth 5.0</p></a>
+                      <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.389</p>
+                      <p class="rs">R$</p>
+                      <p class="valor">23,50</p>
+                      <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                  </div>
+          
+                  <div class="card5">
+                      <a href="#"><img class="item" src="../Imagens/limpador.svg" alt="Limpeza de teclado com Cleaner 5 em 1"></a>
+                      <a href="#"><p class="nome">Limpeza de teclado com Cleaner 5 em 1</p></a>
+                      <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">872</p>
+                      <p class="rs">R$</p>
+                      <p class="valor">27,59</p>
+                      <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                  </div>
+              </div>
+
+              <div class="carousel-item">
+
+                <div class="card1">
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><img class="item" src="../Imagens/a34.svg" alt="Samsung Galaxy A34 128GB 5G"></a>
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><p class="nome">Samsung Galaxy <br> A34 128GB 5G</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">12.382</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">1.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card2">
+                    <a href="#"><img class="item" src="../Imagens/s23u.svg" alt="Samsung Galaxy S23 Ultra 5G 256GB"></a>
+                    <a href="#"><p class="nome">Samsung Galaxy <br> S23 Ultra 5G 256GB</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.422</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">5.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card3">
+                    <a href="#"><img class="item" src="../Imagens/capinha.svg" alt="Capa Transparente Mag-Safe S23 Ultra"></a>
+                    <a href="#"><p class="nome">Capa Transparente <br> Mag-Safe S23 Ultra</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">345</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">29,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card4">
+                    <a href="#"><img class="item" src="../Imagens/fone.svg" alt="Fone de Ouvido Bluetooth 5.0"></a>
+                    <a href="#"><p class="nome">Fone de Ouvido Bluetooth 5.0</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.389</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">23,50</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card5">
+                    <a href="#"><img class="item" src="../Imagens/limpador.svg" alt="Limpeza de teclado com Cleaner 5 em 1"></a>
+                    <a href="#"><p class="nome">Limpeza de teclado com Cleaner 5 em 1</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">872</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">27,59</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+              </div>
+
+              <div class="carousel-item">
+
+                <div class="card1">
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><img class="item" src="../Imagens/a34.svg" alt="Samsung Galaxy A34 128GB 5G"></a>
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><p class="nome">Samsung Galaxy <br> A34 128GB 5G</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">12.382</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">1.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card2">
+                    <a href="#"><img class="item" src="../Imagens/s23u.svg" alt="Samsung Galaxy S23 Ultra 5G 256GB"></a>
+                    <a href="#"><p class="nome">Samsung Galaxy <br> S23 Ultra 5G 256GB</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.422</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">5.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card3">
+                    <a href="#"><img class="item" src="../Imagens/capinha.svg" alt="Capa Transparente Mag-Safe S23 Ultra"></a>
+                    <a href="#"><p class="nome">Capa Transparente <br> Mag-Safe S23 Ultra</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">345</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">29,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card4">
+                    <a href="#"><img class="item" src="../Imagens/fone.svg" alt="Fone de Ouvido Bluetooth 5.0"></a>
+                    <a href="#"><p class="nome">Fone de Ouvido Bluetooth 5.0</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.389</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">23,50</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card5">
+                    <a href="#"><img class="item" src="../Imagens/limpador.svg" alt="Limpeza de teclado com Cleaner 5 em 1"></a>
+                    <a href="#"><p class="nome">Limpeza de teclado com Cleaner 5 em 1</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">872</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">27,59</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+              </div>
+
+              <div class="carousel-item-2">
+
+                <div class="card1">
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><img class="item" src="../Imagens/a34.svg" alt="Samsung Galaxy A34 128GB 5G"></a>
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><p class="nome">Samsung Galaxy <br> A34 128GB 5G</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">12.382</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">1.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card2">
+                    <a href="#"><img class="item" src="../Imagens/s23u.svg" alt="Samsung Galaxy S23 Ultra 5G 256GB"></a>
+                    <a href="#"><p class="nome">Samsung Galaxy <br> S23 Ultra 5G 256GB</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.422</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">5.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card3">
+                    <a href="#"><img class="item" src="../Imagens/capinha.svg" alt="Capa Transparente Mag-Safe S23 Ultra"></a>
+                    <a href="#"><p class="nome">Capa Transparente <br> Mag-Safe S23 Ultra</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">345</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">29,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card4">
+                    <a href="#"><img class="item" src="../Imagens/fone.svg" alt="Fone de Ouvido Bluetooth 5.0"></a>
+                    <a href="#"><p class="nome">Fone de Ouvido Bluetooth 5.0</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.389</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">23,50</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card5">
+                    <a href="#"><img class="item" src="../Imagens/limpador.svg" alt="Limpeza de teclado com Cleaner 5 em 1"></a>
+                    <a href="#"><p class="nome">Limpeza de teclado com Cleaner 5 em 1</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">872</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">27,59</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+
+                <div class="card6">
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><img class="item" src="../Imagens/a34.svg" alt="Samsung Galaxy A34 128GB 5G"></a>
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><p class="nome">Samsung Galaxy <br> A34 128GB 5G</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">12.382</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">1.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card7">
+                    <a href="#"><img class="item" src="../Imagens/s23u.svg" alt="Samsung Galaxy S23 Ultra 5G 256GB"></a>
+                    <a href="#"><p class="nome">Samsung Galaxy <br> S23 Ultra 5G 256GB</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.422</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">5.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card8">
+                    <a href="#"><img class="item" src="../Imagens/capinha.svg" alt="Capa Transparente Mag-Safe S23 Ultra"></a>
+                    <a href="#"><p class="nome">Capa Transparente <br> Mag-Safe S23 Ultra</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">345</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">29,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card9">
+                    <a href="#"><img class="item" src="../Imagens/fone.svg" alt="Fone de Ouvido Bluetooth 5.0"></a>
+                    <a href="#"><p class="nome">Fone de Ouvido Bluetooth 5.0</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.389</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">23,50</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card10">
+                    <a href="#"><img class="item" src="../Imagens/limpador.svg" alt="Limpeza de teclado com Cleaner 5 em 1"></a>
+                    <a href="#"><p class="nome">Limpeza de teclado com Cleaner 5 em 1</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">872</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">27,59</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+
+                <div class="card11">
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><img class="item" src="../Imagens/a34.svg" alt="Samsung Galaxy A34 128GB 5G"></a>
+                    <a href="..\Visão_do_produto - pagina1\Visao_produto.html"><p class="nome">Samsung Galaxy <br> A34 128GB 5G</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">12.382</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">1.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card12">
+                    <a href="#"><img class="item" src="../Imagens/s23u.svg" alt="Samsung Galaxy S23 Ultra 5G 256GB"></a>
+                    <a href="#"><p class="nome">Samsung Galaxy <br> S23 Ultra 5G 256GB</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.422</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">5.600,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card13">
+                    <a href="#"><img class="item" src="../Imagens/capinha.svg" alt="Capa Transparente Mag-Safe S23 Ultra"></a>
+                    <a href="#"><p class="nome">Capa Transparente <br> Mag-Safe S23 Ultra</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">345</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">29,00</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card14">
+                    <a href="#"><img class="item" src="../Imagens/fone.svg" alt="Fone de Ouvido Bluetooth 5.0"></a>
+                    <a href="#"><p class="nome">Fone de Ouvido Bluetooth 5.0</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">2.389</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">23,50</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+        
+                <div class="card15">
+                    <a href="#"><img class="item" src="../Imagens/limpador.svg" alt="Limpeza de teclado com Cleaner 5 em 1"></a>
+                    <a href="#"><p class="nome">Limpeza de teclado com Cleaner 5 em 1</p></a>
+                    <img class="avaliacao" src="../Imagens/5stars.svg" alt="stars" width="186px" height="42px"><p class="ava-q">872</p>
+                    <p class="rs">R$</p>
+                    <p class="valor">27,59</p>
+                    <a href="#"><div class="comprar"><p>Comprar</p></div></a> 
+                </div>
+
+                <div class="cardfim">
+                    <p>Você chegou <br> ao fim</p>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="carousel-controls">
+                <div class="carousel-control" id="prev3"><button class="btn2"><img src="../Imagens/seta_left.svg" alt="passar"></button></div>
+                <div class="carousel-control" id="next3"><button class="btn1"><img src="../Imagens/seta_right.svg" alt="voltar"></button></div>
+            </div>
+          </div>
+    </main>
+
+
+    <footer>
+        <div class="fundo">
+            <div class="topicos">
+                <div class="conheça">
+                    <p>Conheça-nos</p><br>
+                    <a href="#">Sobre a CelFix</a><br>
+                    <a href="#">Informações corporativas</a><br>
+                    <a href="#">Carreiras</a><br>
+                    <a href="#">Comunicados à imprensa</a><br>
+                    <a href="#">Comunidade</a><br>
+                    <a href="#">Acessibilidade</a>
+                </div>
+                <div class="ganhe">
+                    <p>Ganhe dinheiro conosco</p><br>
+                    <a href="#">Venda na CelFix</a><br>
+                    <a href="#">Proteja e construa a sua marca</a><br>
+                    <a href="#">Publique seus aparelhos</a><br>
+                    <a href="#">Seja um associado</a><br>
+                    <a href="#">Anuncie seus produtos</a>
+                </div>
+                <div class="pagamento">
+                    <p>Pagamento</p><br>
+                    <a href="#">Meios de Pagamento</a><br>
+                    <a href="#">Compre com Pontos</a><br>
+                    <a href="#">Cartão de Crédito</a>
+                </div>
+                <div class="deixe">
+                    <p>Deixe-nos ajudar você</p><br>
+                    <a href="..\Celfix perifl\index.html">Sua conta</a><br>
+                    <a href="../Celfix login/index.html">Faça Login ou Cadastro</a><br>
+                    <a href="#">Devoluções e reembolsos</a><br>
+                    <a href="#">Gerencie seu conteúdo e dispositivos</a><br>
+                    <a href="#">Ajuda</a>
+                </div>
+            </div>
+            <div class="voltar">
+                <a id="scrollToTopButton">Voltar ao início</a>
+            </div>
+            <div class="fundo2">
+                <img src="../Imagens/logo.svg" alt="logo" class="logo3">
+                <div class="coisas">
+                    <a href="#" class="condicoes">Condições de Uso |</a>
+                    <a href="#" class="condicoes"> Notificação de Privacidade |</a>
+                    <a href="#" class="condicoes"> Cookies |</a>
+                    <a href="#" class="condicoes"> Anúncios Baseados em Interesses</a>
+                    <p class="afiliadas">© 2023-2023 CelFix.com ou suas afiliadas</p>
+                    <p class="servicos">
+                        CelFix Serviços de Reparo e Varejo do Brasil | CNPJ 70.817.786/0001-10 <br>
+                        Algum lugar - São Paulo CEP: 03952-060 | <a href="#" class="fale">Fale conosco</a> | ajuda-CelFix@CelFix.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="acionador.js"></script>
+    
+</body>
+</html>

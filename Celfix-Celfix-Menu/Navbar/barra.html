@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Jost&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../Imagens/LogoGG.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Barra</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="../Imagens/logo.svg" alt="Logo CelFix" title="Voltar para menu CelFix" class="logo1">
+                <img src="../Imagens/logoGG.svg" alt="Logo grande" title="Voltar para menu CelFix" class="logo2">
+            </a>
+            <ul class="nav-menu">  
+                <li class="searchbar">
+                    <div class="search">
+                        <div class="back"><img src="../Imagens/close_FILL0_wght400_GRAD0_opsz24.svg"><a>Desculpe, não encontramos nenhum produto.</a></div>
+                        <input id="searchInput" onkeyup="filtrar()" type="text" name="" placeholder="Pesquisar" class="search-box">
+                        <ul class="list">
+                        </ul>
+                    </div>
+                        <a class="searchbtn" target="_blank"><img src="../Imagens/search.svg" alt="Pesquise"><div class="searchbnt-a" title="Pesquisar"></div></a>
+                        <a class="microfone" id="voiceBtn"><img src="../Imagens/mic_none_black_24dp.svg" alt="Microfone" title="Pesquisar por voz" class="mic"><img src="../Imagens/micred.svg" class="micred"><div class="searchbnt-b"></div></a>
+                </li>
+            </ul>
+            <ul class="nav-list">
+                <li><a href="#" class="meu-perfil"><div class="back1"><img src="../Imagens/person white.svg" alt="Foto do perfil"></div><div class="name-meu_perfil">Meu perfil</div></a></li>
+                <hr>
+                <li><a href="#"><img src="../Imagens/Lista.svg" class="IMG1">    Sua Lista de desejos</a></li>
+                <li><a href="#"><img src="../Imagens/map.svg" class="IMG2">    Mapa</a></li>
+                <li><a href="#"><img src="../Imagens/ques.svg" class="IMG3">    Dúvidas frequêntes</a></li>
+                <li><a href="#"><img src="../Imagens/help.svg" class="IMG4">    Suporte</a></li>
+            </ul>
+            <div class="fotoperfil">
+                <a class="menu"><img src="../Imagens/person.svg" alt="perfil" class="boneco"><img src="../Imagens/close_FILL0_wght400_GRAD0_opsz24.svg" alt="Fechar" class="xis"></a>
+            </div>
+            <div class="menu-perfil" id="elemento-acionador" title="Menu">
+                <a class="menu"><img src="../Imagens/person.svg" alt="perfil" class="boneco"><img src="../Imagens/close_FILL0_wght400_GRAD0_opsz24.svg" alt="Fechar" class="xis"></a>
+
+                <div class="menuhover" id="elemento-oculto">
+                    <a href="#" class="caixa"><img src="../Imagens/box.svg" alt="pedidos" title="Meus pedidos"></a>
+                    <a href="#" class="sacola"><img src="../Imagens/shopping-bag.svg" alt="sacola" title="Sacola de compras"></a>
+                </div>
+            </div>
+        </nav>
+        <script src="autocompletar.js"></script>
+        <script src="acionador.js"></script>
+    </header>
+    <div class="complemento"></div>
+    <div class="nav-cat">
+        <li class="nav-item"><a href="#" class="nav-link">Mais vendidos</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Ofertas diárias</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Frete grátis</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Para presente</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Celulares</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Acessórios</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Fones de ouvido</a></li>
+    </div>
+
+
+    <main>
+
+    </main>
+
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
